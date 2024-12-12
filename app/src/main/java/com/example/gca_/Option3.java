@@ -22,7 +22,7 @@ public class Option3 extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         // Set up the continue button to navigate to FrontPage
-        Button continueButton = view.findViewById(R.id.continueButton);
+        /*Button continueButton = view.findViewById(R.id.continueButton);
         continueButton.setOnClickListener(v -> {
             // Create a new instance of the FrontPage fragment
             FrontPage frontPageFragment = new FrontPage();
@@ -32,7 +32,7 @@ public class Option3 extends Fragment {
                     .replace(R.id.fragment_container, frontPageFragment) // Use your container ID here
                     .addToBackStack(null) // Optionally add the transaction to the back stack
                     .commit();
-        });
+        });*/
 
         // Make the draggable words respond to drag events
         TextView draggableWord1 = view.findViewById(R.id.draggableWord1);

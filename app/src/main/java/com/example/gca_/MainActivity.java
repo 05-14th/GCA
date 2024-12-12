@@ -1,12 +1,12 @@
 package com.example.gca_;
 
 import android.os.Bundle;
+import android.view.View;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.widget.ViewPager2;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
-import android.view.View;
 
 public class MainActivity extends FragmentActivity {
 
@@ -28,13 +28,13 @@ public class MainActivity extends FragmentActivity {
 
         // Check if there are fragments in the back stack
         if (fragmentManager.getBackStackEntryCount() > 0) {
-            fragmentManager.popBackStack(); // Remove the current fragment
+            fragmentManager.popBackStack(); // Remove the current fragment from back stack
         } else {
             // Show the ViewPager2 if it was hidden
             if (viewPager != null && viewPager.getVisibility() == View.GONE) {
                 viewPager.setVisibility(View.VISIBLE); // Show ViewPager2
             } else {
-                super.onBackPressed(); // Exit the app
+                super.onBackPressed(); // Exit the app if nothing else to go back to
             }
         }
     }
@@ -47,9 +47,9 @@ public class MainActivity extends FragmentActivity {
         @Override
         public Fragment createFragment(int position) {
             if (position == 0) {
-                return new FrontPage();  // First fragment (FrontPage)
+                return new FrontPage();  // FrontPage fragment
             } else {
-                return new SignInFragment();  // Second fragment (SignInFragment)
+                return new SignInFragment();  // SignInFragment fragment
             }
         }
 
