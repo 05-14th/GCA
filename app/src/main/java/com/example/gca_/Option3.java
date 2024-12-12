@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.DragEvent;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import androidx.fragment.app.Fragment;
@@ -19,6 +20,19 @@ public class Option3 extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        // Set up the continue button to navigate to FrontPage
+        Button continueButton = view.findViewById(R.id.continueButton);
+        continueButton.setOnClickListener(v -> {
+            // Create a new instance of the FrontPage fragment
+            FrontPage frontPageFragment = new FrontPage();
+
+            // Replace the current fragment with the FrontPage fragment
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, frontPageFragment) // Use your container ID here
+                    .addToBackStack(null) // Optionally add the transaction to the back stack
+                    .commit();
+        });
 
         // Make the draggable words respond to drag events
         TextView draggableWord1 = view.findViewById(R.id.draggableWord1);
