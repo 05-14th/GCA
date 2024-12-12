@@ -72,9 +72,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
-    <Spinner
-        android:id="@+id/spinner2"
-        style="@android:style/Widget.Spinner.DropDown"
+    <Button
+        android:id="@+id/option_button"
+        android:text="Select Option"
         android:layout_width="233dp"
         android:layout_height="42dp"
         android:layout_marginTop="36dp"
@@ -83,4 +83,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
