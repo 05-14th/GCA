@@ -20,6 +20,7 @@ public class FrontPage extends Fragment {
 
         Button dropdownButton = view.findViewById(R.id.option_button);
         ImageButton infoButton = view.findViewById(R.id.imageButton);
+        ImageButton manualButton = view.findViewById(R.id.imageButton2);
 
         // Set up the dropdown menu
         dropdownButton.setOnClickListener(v -> {
@@ -44,6 +45,20 @@ public class FrontPage extends Fragment {
                 return false;
             });
             popupMenu.show();
+        });
+
+        infoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navigateToFragment(new InfoFragment());
+            }
+        });
+
+        manualButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navigateToFragment(new ManualFragment());
+            }
         });
 
         // Navigate to InfoFragment when the info button is pressed

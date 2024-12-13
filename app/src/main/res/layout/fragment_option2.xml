@@ -45,14 +45,32 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Pagbabantas"
-            android:padding="8dp"
             android:background="@android:color/transparent"
-            android:imeOptions="actionSearch" />
+            android:hint="Pagbabaybay"
+            android:imeOptions="actionSearch"
+            android:padding="8dp" />
 
         <ImageView
             android:id="@+id/searchIcon"
             android:layout_width="24dp"
             android:layout_height="24dp" />
     </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Panuto: Basahin ang mga salitang may wastong pagbaybay.Pindutin ang hinihinging kasagutan. " />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

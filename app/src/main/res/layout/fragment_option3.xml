@@ -68,6 +68,70 @@
         android:textColor="#444" />
 
     <!-- Question Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/draggableWord1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="!" />
+
+        <TextView
+            android:id="@+id/draggableWord2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="." />
+
+        <TextView
+            android:id="@+id/draggableWord3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="!" />
+
+        <TextView
+            android:id="@+id/draggableWord4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="," />
+
+        <FrameLayout
+            android:id="@+id/dropTarget1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp" />
+
+        <FrameLayout
+            android:id="@+id/dropTarget2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp" />
+
+        <FrameLayout
+            android:id="@+id/dropTarget3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp" />
+
+        <FrameLayout
+            android:id="@+id/dropTarget4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp" />
+
+
+    </LinearLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -115,9 +179,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="2. Saklolo! tulungan nyo kami"
-                    android:textSize="14sp"
-                    android:lineSpacingExtra="4dp" />
+                    android:lineSpacingExtra="4dp"
+                    android:text="2. Saklolo tulungan nyo kami"
+                    android:textSize="14sp" />
 
                 <CheckBox
                     android:id="@+id/checkbox2"
@@ -138,9 +202,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="3. Nagluto ako ng amusal, naglaba, naglinis sa sala at saka nagpahi"
-                    android:textSize="14sp"
-                    android:lineSpacingExtra="4dp" />
+                    android:lineSpacingExtra="4dp"
+                    android:text="3. Nagluto ako ng amusal naglaba naglinis sa sala at saka nagpahinga"
+                    android:textSize="14sp" />
 
                 <CheckBox
                     android:id="@+id/checkbox3"
@@ -161,9 +225,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="4. Naku! nakalimutan ko ang sukli"
-                    android:textSize="14sp"
-                    android:lineSpacingExtra="4dp" />
+                    android:lineSpacingExtra="4dp"
+                    android:text="4. Naku nakalimutan ko ang sukli"
+                    android:textSize="14sp" />
 
                 <CheckBox
                     android:id="@+id/checkbox4"
@@ -174,72 +238,9 @@
     </ScrollView>
 
     <!-- Draggable Words Section -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="16dp"
-        android:paddingTop="8dp"
-        android:paddingBottom="16dp">
-
-        <TextView
-            android:id="@+id/draggableWord1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Word 1"
-            android:layout_margin="8dp" />
-
-        <TextView
-            android:id="@+id/draggableWord2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Word 2"
-            android:layout_margin="8dp" />
-
-        <TextView
-            android:id="@+id/draggableWord3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Word 3"
-            android:layout_margin="8dp" />
-
-        <TextView
-            android:id="@+id/draggableWord4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Word 4"
-            android:layout_margin="8dp" />
-
-        <FrameLayout
-            android:id="@+id/dropTarget1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp" />
-
-        <FrameLayout
-            android:id="@+id/dropTarget2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp" />
-
-        <FrameLayout
-            android:id="@+id/dropTarget3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp" />
-
-        <FrameLayout
-            android:id="@+id/dropTarget4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp" />
-
-
-
-    </LinearLayout>
 
     <!-- Bottom Navigation Button -->
+
     <Button
         android:id="@+id/continueButton"
         android:layout_width="match_parent"
