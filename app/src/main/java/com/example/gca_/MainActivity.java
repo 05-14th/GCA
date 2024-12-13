@@ -5,8 +5,8 @@ import android.view.View;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
-import androidx.viewpager2.widget.ViewPager2;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
+import androidx.viewpager2.widget.ViewPager2;
 
 public class MainActivity extends FragmentActivity {
 
@@ -18,6 +18,7 @@ public class MainActivity extends FragmentActivity {
         setContentView(R.layout.activity_main);
 
         viewPager = findViewById(R.id.viewpager);
+        // Make sure you're using the correct ViewPagerAdapter that includes MaterialFragment
         ViewPagerAdapter adapter = new ViewPagerAdapter(this);
         viewPager.setAdapter(adapter);
     }
@@ -48,23 +49,29 @@ public class MainActivity extends FragmentActivity {
         }
     }
 
-    private static class ViewPagerAdapter extends FragmentStateAdapter {
+    // This is your updated ViewPagerAdapter, which now includes the MaterialFragment
+    public static class ViewPagerAdapter extends FragmentStateAdapter {
         public ViewPagerAdapter(FragmentActivity fragmentActivity) {
             super(fragmentActivity);
         }
 
         @Override
         public Fragment createFragment(int position) {
-            if (position == 0) {
-                return new FrontPage();  // FrontPage fragment
-            } else {
-                return new SignInFragment();  // SignInFragment fragment
+            switch (position) {
+                case 0:
+                    return new FrontPage();  // FrontPage fragment
+                case 1:
+                    return new SignInFragment();  // SignInFragment fragment
+                case 2:
+                    return new MaterialFragment();  // Your new MaterialFragment
+                default:
+                    return new FrontPage();  // Default fragment in case something goes wrong
             }
         }
 
         @Override
         public int getItemCount() {
-            return 2;  // Number of fragments to swipe through
+            return 3;  // Now there are 3 fragments (FrontPage, SignInFragment, and MaterialFragment)
         }
     }
 }

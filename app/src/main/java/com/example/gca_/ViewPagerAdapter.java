@@ -18,6 +18,8 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
                 return new FrontPage();
             case 1:
                 return new SignInFragment();
+            case 2:
+                return new MaterialFragment(); // Add the new fragment here
             default:
                 return new FrontPage();
         }
@@ -25,7 +27,6 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 2;
+        return 3; // Update the count to reflect the new fragment
     }
-    
 }
