@@ -39,6 +39,15 @@ public class MainActivity extends FragmentActivity {
         }
     }
 
+    /**
+     * Navigates the ViewPager2 to the FrontPage fragment when the "Continue" button is pressed.
+     */
+    public void navigateToFrontPage() {
+        if (viewPager != null) {
+            viewPager.setCurrentItem(0, true); // Set the ViewPager2 to the first tab (FrontPage)
+        }
+    }
+
     private static class ViewPagerAdapter extends FragmentStateAdapter {
         public ViewPagerAdapter(FragmentActivity fragmentActivity) {
             super(fragmentActivity);

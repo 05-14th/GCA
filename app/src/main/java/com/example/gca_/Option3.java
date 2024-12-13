@@ -21,18 +21,14 @@ public class Option3 extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        // Set up the continue button to navigate to FrontPage
-        /*Button continueButton = view.findViewById(R.id.continueButton);
+        // Set up the continue button
+        Button continueButton = view.findViewById(R.id.continueButton);
         continueButton.setOnClickListener(v -> {
-            // Create a new instance of the FrontPage fragment
-            FrontPage frontPageFragment = new FrontPage();
-
-            // Replace the current fragment with the FrontPage fragment
-            getActivity().getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_container, frontPageFragment) // Use your container ID here
-                    .addToBackStack(null) // Optionally add the transaction to the back stack
-                    .commit();
-        });*/
+            // Navigate back to the first tab in the ViewPager2
+            if (getActivity() instanceof MainActivity) {
+                ((MainActivity) getActivity()).navigateToFrontPage();
+            }
+        });
 
         // Make the draggable words respond to drag events
         TextView draggableWord1 = view.findViewById(R.id.draggableWord1);

@@ -1,14 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ManualFragment">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFF">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!-- Header with Logo and Title -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="i-SURAT"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Impormasyon hinggil sa I-SURAT"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1) Pindutin ang paksang nais pag aralan na nasa bahaging ibaba."
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2) Mag login o gumawa ng account upang mabuksan ang aplikasyon."
+        android:padding="5dp"
+        />
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3) Pumunta sa pagwawasto ng salita at kopyahin ang nais na maiwasto at pindutin ang tsek."
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4) Pumunta sa pagbabaybay ng mga salita at sagutan ang mga hinihinging sagot."
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5) Pumunta sa pagbabantas piliin ang angkop na bantas na kinakailangan sa loob ng pangugusap. Maaaring diinan ng bahagya ang pagpindot/ i-drag upang mailagay sa pangungusap ang wastong bantas."
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6) Upang mas maunawaan pumunta sa mga video tutorial at mga dokumento o link ng files na nasa ibaba upang mabuksan ang bahaging pagkatuto."
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7) Pagkatapos mapanood ilagay ang mga mahahalagang natutunan sa mga napanood."
+        android:padding="5dp"
+        />
+
+    <Button
+        android:id="@+id/agreeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Naiintindihan ko"
+        android:backgroundTint="#00796B"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="8dp" />
+
+
+</LinearLayout>

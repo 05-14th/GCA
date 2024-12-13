@@ -61,8 +61,6 @@ public class FrontPage extends Fragment {
             }
         });
 
-        // Navigate to InfoFragment when the info button is pressed
-        //infoButton.setOnClickListener(v -> navigateToFragment(new InfoFragment()));
 
         return view;
     }
