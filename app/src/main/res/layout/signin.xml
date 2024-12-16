@@ -29,7 +29,7 @@
         android:text="Mag Login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+        app:layout_constraintTop_toBottomOf="@+id/etPassLogin" />
 
     <Button
         android:id="@+id/button3"
@@ -57,7 +57,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/etPassLogin"
         android:layout_width="247dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -67,10 +67,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+        app:layout_constraintTop_toBottomOf="@+id/etEmailLogin" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/etEmailLogin"
         android:layout_width="247dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
