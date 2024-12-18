@@ -114,37 +114,37 @@
             android:textSize="40dp"
             android:text="," />
 
-        <FrameLayout
+        <TextView
             android:id="@+id/dropTarget1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp" />
 
-        <FrameLayout
+        <TextView
             android:id="@+id/dropTarget2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp" />
 
-        <FrameLayout
+        <TextView
             android:id="@+id/dropTarget3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp" />
 
-        <FrameLayout
+        <TextView
             android:id="@+id/dropTarget4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp" />
 
-        <FrameLayout
+        <TextView
             android:id="@+id/dropTarget5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ang kanyang" />
 
-        <FrameLayout
+        <TextView
             android:id="@+id/dropTarget6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
