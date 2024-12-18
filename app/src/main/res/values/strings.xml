@@ -3,4 +3,14 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Text" />
+    <!-- Option3 options -->
+
+    <string name="question1">1. Opo nanay <font color="#FF0000">magsasaing</font> na po <font color="#FF0000">ako</font></string>
+    <string name="question2">2. <font color="#FF0000">Saklolo</font> tulungan nyo <font color="#FF0000">kami</font></string>
+    <string name="question3">3. <font color="#FF0000">Nagluto</font> ako ng <font color="#FF0000">almusal</font> <font color="#FF0000">naglaba</font> <font color="#FF0000">naglinis</font> sa sala at saka <font color="#FF0000">nagpahinga</font></string>
+    <string name="question4">4. <font color="#FF0000">Naku</font> nakalimutan ko ang <font color="#FF0000">sukli</font></string>
+    <string name="question5">5. <font color="#FF0000">Ang kanyang</font> ganda ay <font color="#FF0000">di matatawaran</font></string>
+
+
+
 </resources>

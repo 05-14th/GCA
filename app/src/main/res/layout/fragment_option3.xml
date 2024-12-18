@@ -51,7 +51,6 @@
             android:textSize="16sp"
             android:padding="8dp" />
 
-
         <ImageView
             android:id="@+id/searchIcon"
             android:layout_width="24dp"
@@ -80,31 +79,39 @@
         android:paddingBottom="16dp">
 
         <TextView
-            android:id="@+id/draggableWord1"
+            android:id="@+id/punctuation1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
+            android:padding="10dp"
+            android:textSize="40dp"
             android:text="!" />
 
         <TextView
-            android:id="@+id/draggableWord2"
+            android:id="@+id/punctuation2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
+            android:padding="10dp"
+            android:textSize="40dp"
             android:text="." />
 
         <TextView
-            android:id="@+id/draggableWord3"
+            android:id="@+id/punctuation3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="!" />
+            android:padding="10dp"
+            android:textSize="40dp"
+            android:text="-" />
 
         <TextView
-            android:id="@+id/draggableWord4"
+            android:id="@+id/punctuation4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
+            android:padding="10dp"
+            android:textSize="40dp"
             android:text="," />
 
         <FrameLayout
@@ -130,6 +137,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp" />
+
+        <FrameLayout
+            android:id="@+id/dropTarget5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ang kanyang" />
+
+        <FrameLayout
+            android:id="@+id/dropTarget6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="di matatawaran" />
 
 
     </LinearLayout>
@@ -158,14 +177,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="1. Opo nanay magsasaing na po ako sagot ni Maricel"
+                    android:text="@string/question1"
                     android:textSize="14sp"
                     android:lineSpacingExtra="4dp" />
-
-                <CheckBox
-                    android:id="@+id/checkbox1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
             </LinearLayout>
 
             <!-- Question 2 -->
@@ -182,13 +196,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:lineSpacingExtra="4dp"
-                    android:text="2. Saklolo tulungan nyo kami"
+                    android:text="@string/question2"
                     android:textSize="14sp" />
-
-                <CheckBox
-                    android:id="@+id/checkbox2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
             </LinearLayout>
 
             <!-- Question 3 -->
@@ -205,13 +214,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:lineSpacingExtra="4dp"
-                    android:text="3. Nagluto ako ng amusal naglaba naglinis sa sala at saka nagpahinga"
+                    android:text="@string/question3"
                     android:textSize="14sp" />
-
-                <CheckBox
-                    android:id="@+id/checkbox3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
             </LinearLayout>
 
             <!-- Question 4 -->
@@ -228,21 +232,35 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:lineSpacingExtra="4dp"
-                    android:text="4. Naku nakalimutan ko ang sukli"
+                    android:text="@string/question4"
                     android:textSize="14sp" />
 
-                <CheckBox
-                    android:id="@+id/checkbox4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
             </LinearLayout>
+
+            <!-- Question 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/question5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="4dp"
+                    android:text="@string/question5"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
         </LinearLayout>
     </ScrollView>
 
-    <!-- Draggable Words Section -->
-
     <!-- Bottom Navigation Button -->
-
     <Button
         android:id="@+id/continueButton"
         android:layout_width="match_parent"
@@ -253,5 +271,4 @@
         android:textSize="16sp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="8dp" />
-
 </LinearLayout>
