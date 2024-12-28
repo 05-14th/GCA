@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFF"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:background="#FFF">
+    android:padding="16dp">
 
     <!-- Header with Logo and Title -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/logoImage"
@@ -20,16 +23,66 @@
             android:src="@drawable/logo" />
 
         <TextView
-            android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="i-SURAT"
-            android:textSize="24sp"
-            android:textStyle="bold"
+            android:layout_marginTop="8dp"
             android:fontFamily="serif"
             android:gravity="center"
-            android:layout_marginTop="8dp" />
+            android:text="i-SURAT"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pindutin ang larawan ng panauhing nais kilalanin" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:foreground="@drawable/pkr"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:foreground="@drawable/jsa"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:foreground="@drawable/instructior"
+            tools:srcCompat="@tools:sample/avatars" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/person_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp" />
 
 
 </LinearLayout>

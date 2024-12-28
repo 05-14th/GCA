@@ -20,7 +20,7 @@
             android:src="@drawable/logo" />
 
         <TextView
-            android:id="@+id/title"
+            android:id="@+id/jsa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="i-SURAT"
